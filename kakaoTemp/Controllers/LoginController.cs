@@ -7,7 +7,7 @@ namespace kakaoTemp.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
-        [HttpGet("/kakao")]
+        [HttpGet("kakao")]
         public IActionResult RedirectToKakaoLogin()
         {
             const string client_id = "49209eb683ce3a79ad35d14c2dc39b60";

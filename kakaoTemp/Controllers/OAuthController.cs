@@ -24,12 +24,12 @@ namespace kakaoTemp.Controllers
             _oauthService = oauthService;
         }
 
-        [HttpGet("/kakao")]
+        [HttpGet("kakao")]
         public async Task<IActionResult> HandleOAuthRedirect([FromQuery] string code)
         {
             string access_token = await _oauthService.RequestAccessToken(code);
             long user_id = await _oauthService.RequestUserId(access_token);
-            user_id = long.Parse(Platform.Kakao.ToString() + user_id.ToString());
+            user_id = long.Parse(((int)(Platform.Kakao)).ToString() + user_id.ToString());
 
             if (isJoined(user_id))
             {

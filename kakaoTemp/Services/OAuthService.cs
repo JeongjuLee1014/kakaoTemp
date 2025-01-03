@@ -17,7 +17,7 @@ namespace kakaoTemp.Services
         {
             const string grant_type = "authorization_code";
             const string client_id = "49209eb683ce3a79ad35d14c2dc39b60";
-            const string redirect_uri = "https://localhost:7032/oauth";
+            const string redirect_uri = "https://localhost:7032/oauth/kakao";
 
             string url = "https://kauth.kakao.com/oauth/token";
 
