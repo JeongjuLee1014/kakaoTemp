@@ -1,0 +1,5 @@
+@kakaoTemp_HostAddress = http://localhost:5288
+
+GET https://kauth.kakao.com/oauth/authorize?client_id=49209eb683ce3a79ad35d14c2dc39b60&redirect_uri=https://localhost:7032/oauth&response_type=code
+
+###
